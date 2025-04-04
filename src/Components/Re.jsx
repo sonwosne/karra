@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
 import mail from "../img/mail.svg"
 import telephonem from "../img/yulduzcha_files/telephonem.svg"
 import location from "../img/yulduzcha_files/location.svg"
 import date from "../img/yulduzcha_files/date.svg"
 
 const Re = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+
   return (
     <div className='bg-black text-white min-h-screen flex-col p-4 sm:p-6 md:p-8'>
       {/* form */}
@@ -50,7 +52,15 @@ const Re = () => {
                 <input className='bg-neutral-600 rounded-md mt-1 sm:mt-2 w-full p-2 text-sm sm:text-base' type="text" id='name' name='name' required /> <br />
 
                 <label htmlFor="phone" className='text-sm sm:text-base'>Telefon raqamingiz*</label> <br />
-                <input className='bg-neutral-600 rounded-md mt-1 sm:mt-2 w-full p-2 text-sm sm:text-base' type="tel" id='phone' name='phone' required /> <br />
+                <input 
+                  className='bg-neutral-600 rounded-md mt-1 sm:mt-2 w-full p-2 text-sm sm:text-base' 
+                  type="text" 
+                  id='phone' 
+                  name='phone' 
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/g, ''))}
+                  required 
+                /> <br />
 
                 <label htmlFor="option" className='text-sm sm:text-base'>Variantlardan birini tanlang*</label> <br />
                 <select className='bg-neutral-600 rounded-md mt-1 sm:mt-2 w-full p-2 mb-2 text-sm sm:text-base' id='option' name='option' required>
