@@ -97,6 +97,9 @@ const Header = () => {
       >
         Qabulga yozilish
       </button>
+      {/* google verification */}
+
+      <meta name="google-site-verification" content="ciR_LGcoEysno8FHUh_NkvrPeU-qO-_FUUS3qMhqAFs" />
     </header>
   );
 };
