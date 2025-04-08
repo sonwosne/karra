@@ -50,14 +50,14 @@ const Re = () => {
 
           <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 ml-4 sm:ml-6 md:ml-8'>
             <li className='text-base sm:text-lg md:text-xl flex gap-2 pb-4'>
-              <div><img src={mail} alt="email-icon" /></div>
+              <div><img src={mail} alt="mail-icon" /></div>
               <h3>E-pochta <br />
                 <span className='text-sm sm:text-base text-zinc-400'>info@karraosish.com</span>
               </h3>
             </li>
 
             <li className='text-base sm:text-lg md:text-xl flex gap-2 pb-4'>
-              <div><img src={phone} alt="phone-icon" /></div>
+              <div><img src={phone} alt="phone-svg" /></div>
               <h3>Telefon raqam <br />
                 <span className='text-sm sm:text-base text-zinc-400'>+998 (99) 888-77-66</span>
               </h3>
@@ -71,7 +71,7 @@ const Re = () => {
             </li>
 
             <li className='text-base sm:text-lg md:text-xl flex gap-2 pb-4'>
-              <div><img src={date} alt="date-icon"/></div>
+              <div><img src={date} alt="date-icon" /></div>
               <h3>Ish vaqti <br />
                 <span className='text-sm sm:text-base text-zinc-400'>Du-Sha, 9:00 dan 18:00 gacha</span>
               </h3>
