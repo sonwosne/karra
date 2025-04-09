@@ -57,7 +57,7 @@ const Re = () => {
             </li>
 
             <li className='text-base sm:text-lg md:text-xl flex gap-2 pb-4'>
-              <div><img src={phone} alt="phone-svg" /></div>
+              <div><img src={phone} alt="phone-icon" /></div>
               <h3>Telefon raqam <br />
                 <span className='text-sm sm:text-base text-zinc-400'>+998 (99) 888-77-66</span>
               </h3>
@@ -71,7 +71,7 @@ const Re = () => {
             </li>
 
             <li className='text-base sm:text-lg md:text-xl flex gap-2 pb-4'>
-              <div><img src={date} alt="date-icon" /></div>
+              <div><img src={date} alt="date-icon"/></div>
               <h3>Ish vaqti <br />
                 <span className='text-sm sm:text-base text-zinc-400'>Du-Sha, 9:00 dan 18:00 gacha</span>
               </h3>
@@ -91,9 +91,7 @@ const Re = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required 
-            /> <br />
-
-            <label htmlFor="phone" className='text-sm sm:text-base'>Telefon raqamingiz*</label> <br />
+            /> <br /><label htmlFor="phone" className='text-sm sm:text-base'>Telefon raqamingiz*</label> <br />
             <input
               className='bg-neutral-600 rounded-md mt-1 sm:mt-2 w-full p-2 text-sm sm:text-base'
               type="tel"
