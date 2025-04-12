@@ -109,9 +109,7 @@ const Re = () => {
               name='option' 
               value={option}
               onChange={(e) => setOption(e.target.value)}
-              required
-            >
-              <option value="">Tanlang...</option>
+              required>
               <option value="option1">Hech qanday ma'lumotim yo'q, to'liqroq bilishni xohlayman.</option>
               <option value="option2">Dastur haqida bilaman, lekin savollarim bor.</option>
               <option value="option3">Dasturni o'rganib chiqdim, to'lov qilishga tayyorman.</option>
